@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Owl Jam</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="Songs/Owl.png">
-</head>
-<body>
-  <img class="logo" src="Songs/logo.jpg">
-  <div class="music-player">
-    <div class="song-info">
-      <img id="album-image" src="" alt="Album Cover">
-      <div>
-        <h1 id="song-title">Title</h1>
-        <p id="artist-name">Song Name</p>
-      </div>
-    </div>
-    <audio id="song">
-      <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
-    </audio>
-    <div class="lp">
-      <img src="Songs/Handle.png" class="handle">
-      <input type="range" id="progress" value="0" />
-    </div>
-    
-    <div class="song-sequence">
-      <ul id="song-list">
-      </ul>
-    </div>
-    <div class="controls">
-      <button class="backward">
-        <i class="fa-solid fa-backward"></i>
-      </button>
-      <button class="play-pause-btn">
-        <i class="fa-solid fa-play" id="controlIcon"></i>
-      </button>
-      <button class="forward">
-        <i class="fa-solid fa-forward"></i>
-      </button>
-      <button class="shuffle">
-        <i class="fa-solid fa-random"></i>
-      </button>
-      <button class="loop">
-        <i class="fa-solid fa-repeat"></i>
-      </button>
-      <button class="full-screen">
-        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-      </button>
-    </div>
-    
-   
-    <div class="volume-control">
-      <i class="fa-solid fa-volume-up" id="volume-icon"></i>
-      <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
-    </div>
-    <canvas id="visualizer-left" class="visualizer"></canvas>
-    <canvas id="visualizer-right" class="visualizer"></canvas>
-    <canvas id="background-visualizer" class="background-visualizer"></canvas>
-  </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
-  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
-  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
-  <script src="./script.js"></script>
+<title>Owl Jam</title>
+<link rel="icon" type="image/x-icon" href="Songs/Owl.png">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h1 class="logo">Owl Jam</h1>
+
+        <div class="queue-title">QUEUE</div>
+
+        <ul id="queue-list"></ul>
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+        <h2 class="section-title">Your Library</h2>
+        <div id="album-grid" class="album-grid"></div>
+    </main>
+
+</div>
+
+
+<!-- PLAYER -->
+
+<div class="player">
+
+    <div class="track-info">
+        <img id="player-cover">
+        <div>
+            <div id="player-title"></div>
+            <div id="player-artist"></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="shuffle">
+            <i class="fa-solid fa-random"></i>
+        </button>
+
+        <button id="prev">
+            <i class="fa-solid fa-backward"></i>
+        </button>
+
+        <button id="play">
+            <i class="fa-solid fa-play" id="play-icon"></i>
+        </button>
+
+        <button id="next">
+            <i class="fa-solid fa-forward"></i>
+        </button>
+        <div class="volume-container">
+            <i id="volume-icon" class="fa-solid fa-volume-high"></i>
+            <input
+            type="range"
+            id="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1"
+            >
+        </div>
+    </div>
+
+    <input type="range" id="progress">
+
+</div>
+
+<audio id="audio"></audio>
+
+<script src="script.js"></script>
+
 </body>
 </html>
