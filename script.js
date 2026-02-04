@@ -19,24 +19,24 @@ const progress = document.getElementById("progress");
 /* SONG DATA */
 
 const songs = [
-  {title: "Choo Lo", name: "Local Train", source:"songs/Song12.mp3",image:"Photo/choolo.jpg"},
-  { title: "Ale", name: "Antara Mitra", source: "songs/Song2.mp3",image:"Photo/ale.jpg"},
-  { title: "Illahi", name: "Arijit Singh", source: "songs/Song3.mp3",image:"Photo/Ilahi.jpg" },
-  { title: "Pee Loon", name: "Pritam, Mohit Chauhaan", source: "songs/Song4.mp3",image:"Photo/plu.jpg" },
-  { title: "Raat Bhar", name: "Arijit Singh, Shreya Ghoshal", source: "songs/Song5.mp3",image:"Photo/rtbr.jpg" },
-  { title: "Iktara", name: "Kavita Seth", source: "songs/Song6.mp3",image:"Photo/113.jpg" },
-  { title: "Safarnama", name: "Lucky Ali", source: "songs/Song7.mp3",image:"Photo/fe.jpg" },
-  {title: "Beedi Jalaile", name:"Sukwinder,Sunidhi Chauhaan", source:"songs/Song8.mp3",image:"Photo/hq2.jpg"},
-  {title: "Bheege Hont", name: "Kushal Ganjawala", source:"songs/Song9.mp3",image:"Photo/OIP.jpg"},
-  {title: "Sacch Keh raha hai", name: "K.K.", source:"songs/Song10.mp3",image:"Photo/kk.jpg"},
-  {title: "Sawariyaan", name: "Monty Sharma", source:"songs/Song11.mp3",image:"Photo/dfe.jpg"},
-  { title: "Prem ki Naiyaan", name: "Neeraj Shridhar", source: "songs/Song13.mp3",image:"Photo/neya.png" },
-  { title: "Khudaya Khair", name: "Pritam", source: "songs/Song14.mp3",image:"Photo/KKK.jpg" },
-  { title: "Khabar Nahi", name: "Vishal Dadlani", source: "songs/Song15.mp3",image:"Photo/kbr.jpg" },
-  { title: "Kabira", name: "Pritam", source: "songs/Song16.mp3",image:"Photo/ss5.jpg" },
-  { title: "Tum Saath Ho", name: "Arijit Singh, Alka Yagnik", source: "songs/Song17.mp3",image:"Photo/fe.jpg" },
-  { title: "Aaj Kal Jindagi", name: "Shankar-Ehsaan-Loy", source: "songs/Song18.mp3",image:"Photo/dwdw.jpg" },
-  { title: "Te Amo", name: "Sunidhi Chawhaan, Pritam", source: "songs/Song1.mp3",image:"Photo/fef.jpg" }
+  {title: "Choo Lo", name: "Local Train", source:"Songs/Song12.mp3",image:"Photo/choolo.jpg"},
+  { title: "Ale", name: "Antara Mitra", source: "Songs/Song2.mp3",image:"Photo/ale.jpg"},
+  { title: "Illahi", name: "Arijit Singh", source: "Songs/Song3.mp3",image:"Photo/Ilahi.jpg" },
+  { title: "Pee Loon", name: "Pritam, Mohit Chauhaan", source: "Songs/Song4.mp3",image:"Photo/plu.jpg" },
+  { title: "Raat Bhar", name: "Arijit Singh, Shreya Ghoshal", source: "Songs/Song5.mp3",image:"Photo/rtbr.jpg" },
+  { title: "Iktara", name: "Kavita Seth", source: "Songs/Song6.mp3",image:"Photo/113.jpg" },
+  { title: "Safarnama", name: "Lucky Ali", source: "Songs/Song7.mp3",image:"Photo/fe.jpg" },
+  {title: "Beedi Jalaile", name:"Sukwinder,Sunidhi Chauhaan", source:"Songs/Song8.mp3",image:"Photo/hq2.jpg"},
+  {title: "Bheege Hont", name: "Kushal Ganjawala", source:"Songs/Song9.mp3",image:"Photo/OIP.jpg"},
+  {title: "Sacch Keh raha hai", name: "K.K.", source:"Songs/Song10.mp3",image:"Photo/kk.jpg"},
+  {title: "Sawariyaan", name: "Monty Sharma", source:"Songs/Song11.mp3",image:"Photo/dfe.jpg"},
+  { title: "Prem ki Naiyaan", name: "Neeraj Shridhar", source: "Songs/Song13.mp3",image:"Photo/neya.png" },
+  { title: "Khudaya Khair", name: "Pritam", source: "Songs/Song14.mp3",image:"Photo/KKK.jpg" },
+  { title: "Khabar Nahi", name: "Vishal Dadlani", source: "Songs/Song15.mp3",image:"Photo/kbr.jpg" },
+  { title: "Kabira", name: "Pritam", source: "Songs/Song16.mp3",image:"Photo/ss5.jpg" },
+  { title: "Tum Saath Ho", name: "Arijit Singh, Alka Yagnik", source: "Songs/Song17.mp3",image:"Photo/fe.jpg" },
+  { title: "Aaj Kal Jindagi", name: "Shankar-Ehsaan-Loy", source: "Songs/Song18.mp3",image:"Photo/dwdw.jpg" },
+  { title: "Te Amo", name: "Sunidhi Chawhaan, Pritam", source: "Songs/Song1.mp3",image:"Photo/fef.jpg" }
 ];
 
 let queue = [...songs];
